@@ -1,0 +1,130 @@
+body {
+    background: #e4f4f4
+}
+
+header{
+	margin-top:45px;
+	margin-bottom:50px;
+}
+h1.title{
+	color:#a1abac;
+	font-size:28px;
+	text-align:right;
+	padding:0px 5px 6px 0;
+	border-bottom:2px solid #a1abac;
+}
+
+h1.title span{
+position:relative;
+}
+
+h1.title span:before{
+	content : " ";
+	background:#a1abac;
+	width:6px;
+	height:6px; 
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:-6px;
+	left:0;
+}
+
+
+h1.title span:nth-child(1):before{left:2px;}
+h1.title span:nth-child(2):before{left:10px;}
+h1.title span:nth-child(3):before{left:6px;}
+
+nav {padding:75px 80px 6px 0; border-bottom:2px solid #a1abac;}
+nav ul{margin:0; padding:0}
+
+nav li{float:left; list-style:none; display:inline-block; width:33%; }
+nav li a{text-decoration:none;color:#000; font-size:14px; font-weight:bold;}
+
+.project-heading{
+	margin-bottom:55px;
+}
+.project-heading .title{
+	font-size:16px;
+	font-weight:bold;
+	margin:0 120px 0 100px;
+}
+
+
+.project-heading ul{margin-left:140px; margin-top:10px; padding:0}
+.project-heading li{list-style:none;}
+
+.project-apps{margin-bottom:68px;}
+.project-apps .container{padding:0 170px;}
+.project-apps .row > div{padding:0 6px;}
+
+.featured{margin-bottom:80px;}
+.featured .container{padding:0 100px;}
+.featured .title{font-size:16px; font-weight:bold; margin-top:50px;}
+.featured ul{margin-left:40px; padding:0}
+.featured li{list-style:none}
+
+
+.about-img{margin-top:100px;}
+@media(max-width:991px){
+	
+	nav {
+		padding: 75px 0px 6px 0;
+	}
+	
+	.project-heading .title{
+		margin:0 0px 0 50px
+	}
+	
+	.project-heading ul{
+		    margin-left: 80px;
+	}
+	
+	.about-img {
+		margin-top: 0;
+		text-align:center;
+		margin-bottom:15px;
+	}
+	
+	.about p{margin-bottom:30px;}
+	
+	.video{margin-top:20px;}
+}
+
+@media(max-width:767px){
+	header {
+		margin-top: 15px;
+		margin-bottom:15px;
+	}
+
+	h1.title{
+		text-align:center;
+		margin-bottom:0
+	}
+	nav {
+		padding: 10px 0px 6px 0;
+		text-align:center;
+	}
+	
+	.project-heading{padding:0 20px}
+	.project-heading .title{margin:0}
+	.project-heading ul{margin:0}
+	.project-apps .container{padding:0}
+	.project-apps .row>div{    padding: 5px 6px;}
+	.featured .container{padding:0}
+}
+@media(max-width:480px){
+	.project-heading{padding:0;}
+	.project-heading ul{margin-top:10px}
+	.project-heading li{margin-top:5px}
+	
+	.project-apps .row>div{width:100%; text-align:center}
+	.project-apps .row>div img{display:inline-block;}
+	
+	.featured .title{margin-top:20px}
+	.featured ul{margin-left:20px;margin-top:10px}
+	.featured ul li{margin-top:5px;}
+	.project-apps{
+		margin-bottom:30px;
+	}
+}
